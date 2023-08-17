@@ -37,7 +37,7 @@ class PhoneListAdapter : RecyclerView.Adapter<PhoneListAdapter.ListViewHolder>()
         fun bind(phone: PhoneEntity) {
             binding.imgPhone.load(phone.image)
             binding.txtName.text = phone.name
-            binding.txtPrice.text = phone.price.toString()
+            binding.txtPrice.text = "$ ${phone.price}"
             binding.cardPhoneItem.setOnClickListener {
                 val selectedItemId = Bundle()
                 selectedItemId.putInt("id", phone.id)

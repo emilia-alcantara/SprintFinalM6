@@ -46,9 +46,9 @@ class DetailsFragment : Fragment() {
         phoneViewModel.phoneDetailsLiveData(selectedPhoneId).observe(viewLifecycleOwner) {
             if (it != null) {
                 binding.txtNameDt.text = it.name
-                binding.txtPriceDt.text = "Ahora $ ${it.price}"
-                binding.txtLastPriceDt.text = "Antes $ ${it.lastPrice}"
-                binding.txtDescriptionDt.text = it.description
+                binding.txtPriceDt.text = getString(R.string.current_price_value,it.price)
+                binding.txtLastPriceDt.text = getString(R.string.previous_price, it.lastPrice)
+                binding.txtDescriptionDt.text = getString(R.string.description_title, it.description)
                 binding.imgPhoneDt.load(it.image)
 
                 val creditValue: String = if (it.credit) {

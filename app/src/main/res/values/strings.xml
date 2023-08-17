@@ -12,4 +12,7 @@
     <string name="content_fab">Icono mensaje correo electrónico</string>
     <string name="credit_true">Acepta crédito</string>
     <string name="credit_false">Sólo efectivo</string>
+    <string name="previous_price">Antes $ %1$d</string>
+    <string name="current_price_value">Ahora $ %1$d</string>
+    <string name="description_title">Características: \n \n %1$s</string>
 </resources>
