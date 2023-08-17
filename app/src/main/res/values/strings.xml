@@ -10,4 +10,6 @@
     <string name="last_price">Last price</string>
     <string name="credit_holder">Credit</string>
     <string name="content_fab">Icono mensaje correo electrónico</string>
+    <string name="credit_true">Acepta crédito</string>
+    <string name="credit_false">Sólo efectivo</string>
 </resources>
