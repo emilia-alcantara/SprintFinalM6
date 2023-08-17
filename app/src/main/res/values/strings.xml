@@ -15,4 +15,9 @@
     <string name="previous_price">Antes $ %1$d</string>
     <string name="current_price_value">Ahora $ %1$d</string>
     <string name="description_title">Características: \n \n %1$s</string>
+    <string name="send_email_to">info@novaera.cl</string>
+
+
+
+
 </resources>

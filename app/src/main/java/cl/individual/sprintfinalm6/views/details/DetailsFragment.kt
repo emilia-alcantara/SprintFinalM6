@@ -39,6 +39,7 @@ class DetailsFragment : Fragment() {
 
         phoneViewModel.getPhoneDetails(selectedPhoneId)
         initDetailsView()
+        initSendEmailButton()
         return binding.root
     }
 
@@ -58,6 +59,14 @@ class DetailsFragment : Fragment() {
                 }
 
                 binding.txtCreditDt.text = creditValue
+            }
+        }
+    }
+
+    private fun initSendEmailButton() {
+        binding.fabSendEmail.setOnClickListener{
+            phoneViewModel.phoneDetailsLiveData(selectedPhoneId).observe(viewLifecycleOwner) {
+                phoneViewModel.sendEmail(requireContext(), it.name, selectedPhoneId)
             }
         }
     }
